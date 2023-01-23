@@ -5,43 +5,7 @@
     </head>
 <body>
 <h1>Welcome!</h1>
-<p>This page will be updated soon! Check institutional page <a href="//lehigh.edu/agk223">here</a></p>
- <div id="wrapper" class="wrapper">
-
-    <div class="container pt-9 pb-9 pt-md-13 pb-md-13">
-      <div class="row justify-content-center align-content-between">
-        <div class="col-9 text-center">
-		<b>:D</b>
-		</br> </br>
-          
-          <span style="color: #6495ED">
-					<a id="thewebsite" href="https://www.kebede.org?ref=gh"> <!--Hyperlink used to skip past timer and set the redirect script variable, update for your site.-->
-						You will be redirected to the homepage <span id="countdown">20</span> <!--The script will use this number for the seconds vaiable.-->
-					</a>
-				</span>
-          
-          <script type="text/javascript">
-			var seconds = document.getElementById("countdown").innerHTML; //Grab the countdown seconds variable from the innerHTML itself for easier adjustments
-			var website = document.getElementById("thewebsite").href; //The redirect URL will be taken from the skip hyperlink with ID "thewebsite" above.
-				
-			function countdown() {
-				if (seconds < -2) { //I'm using a negative number to delay the redirect for a smoother UX transition
-					window.location = website; //Redirect to the website
-				} else {
-					// Update remaining seconds
-					if (seconds < 1) {document.getElementById("countdown").innerHTML = "now!";} //Phrase used when countdown has reached zero - I'm a stickler for wording!
-					else if (seconds < 2) {
-						document.getElementById("countdown").innerHTML = "in " + seconds + " second..."; //Phrase used at the one second mark.
-						document.getElementById("rocketgif").innerHTML = "<img src=\"images/rocket1.gif\" />";//Show a cool rocket at one second - make sure to preload!
-					}
-					else {document.getElementById("countdown").innerHTML = "in " + seconds + " seconds...";}
-					seconds = seconds - 1; //Reduce the 'seconds' variable
-					window.setTimeout("countdown()", 1000); //Countdown using javascript
-				}
-			}
-			countdown(); //Run countdown function
-		</script>
-          
-  
-  </body>
+<p>This page will be updated soon! Check institutional page <a href="//users.stjohn.edu.et/~agk">here</a></p>
+ <div id="wrapper" class="wrapper"
+</body>
 </html>
